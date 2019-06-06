@@ -1,3 +1,42 @@
+## Running for first time
+
+### Setting up openmrs-react-components repository
+
+```
+git clone https://github.com/beingtmk/openmrs-react-components.git
+cd openmrs-react-components
+npm i
+npm link
+```
+
+### Setting up this repository
+
+```
+git clone https://github.com/beingtmk/openmrs-react-components-test.git
+cd openmrs-react-components-test
+npm i
+npm link @openmrs/react-components
+```
+
+### Avoid Rect duplicate import error
+
+```
+cd openmrs-react-components
+npm link path-to-your-this-project/node_modules/react
+```
+
+### Start Development Environment
+
+```
+cd openmrs-react-components
+npm run build:watch
+
+cd openmrs-react-components-test
+npm start
+
+```
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
